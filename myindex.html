@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffafbd;
+            transform: scale(1.1);
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        article {
+            flex: 3;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            animation: floatUp 1s ease-in-out;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #f8f9fd;
+            border-radius: 15px;
+            margin-left: 20px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #6a11cb;
+        }
+
+        section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        aside h3 {
+            font-size: 1.5rem;
+            color: #6a11cb;
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin: 10px 0;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+            color: #ffafbd;
+        }
+
+        footer form {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        footer input, footer textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        footer button {
+            padding: 12px 25px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        footer button:hover {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Creative Website</h1>
+        <p>Your one-stop destination for creative designs and inspiring ideas.</p>
+    </header>
+    <nav>
+        <a href="myindex.html" target = "_blank">Home</a>
+        <a href="navigation.html" target = "_blank">Navigation</a>
+        <a href="blog.html" target = "_blank">Blog</a>
+        <a href="#contact" target = "_blank">Contact Us</a>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <h2>About This Page</h2>
+                <p>This page is a blend of creativity and functionality, designed to give users an engaging experience. Explore every section to see what it offers!</p>
+            </section>
+            <section>
+                <h2>Home Page Theme</h2>
+                <p>The theme is focused on vibrant gradients and subtle animations, making the website visually appealing while maintaining simplicity and usability.</p>
+            </section>
+        </article>
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="activity1.html" target="_blank">Activity 1</a></li>
+                <li><a href="https://github.com/suhaanikk/WebDA" target="_blank">Activity 2</a></li>
+                <li><a href="activity3.html" target = "_blank">Activity 3</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>&copy; 2025 My Creative Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
